@@ -209,9 +209,30 @@
 
 .card {
     border: 0px;
+    
 }
-
-.card_image img {
+.card_image_btn {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+.card_btn {
+    display: flex;
+    position: absolute;
+    bottom: -50px;
+    left: 94px;
+    transition: 1.3s ease-in-out;
+}
+.card:hover .card_btn{
+    bottom: 20px;
+}
+.card_btn button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+.card_image  {
     display: flex;
     width: 295px;
     height: 298px;
